@@ -1,0 +1,9 @@
+{
+  "cookiepolicy": {
+    "title": "Politique de cookies",
+    "messages": {
+      "use": "Nous utilisons les cookies pour faciliter l'utilisation de notre site Web. Les cookies sont des petits fichiers textes stockés par votre navigateur sur le disque dur de votre ordinateur et vous sont tenus d'utiliser notre site. Nous les utilisons pour sauver la session de l'utilisateur une fois identifiés, afin de mieux comprendre la façon dont vous utilisez notre site Web et donc par conséquent d'améliorer le processus de navigation.",
+      "description": "Les cookies sont de l'indice de référence qui indique, par exemple, si une page de notre site a été vu avant, ou si votre visite est nouveau ou récurrent. Les cookies que nous utilisons ne stockent pas les données personnelles des, ou toute information qui pourrait identifier. Si vous ne souhaitez pas recevoir de cookies, s'il vous plaît configurer votre navigateur Internet pour les supprimer à partir du disque dur de votre ordinateur, de les bloquer ou vous avertir en cas d'installation de la même."
+    }
+  }
+}
