@@ -11,7 +11,7 @@ angular.module('<%=angularAppName%>')
             },
             views: {
                 'content@': {
-                    templateUrl: 'scripts/app/cookiepolicy/cookiepolicy.html'
+                    templateUrl: 'app/cookiepolicy/cookiepolicy.html'
                 }
             },
             resolve: {
