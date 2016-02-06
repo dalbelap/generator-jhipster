@@ -434,12 +434,8 @@ module.exports = JhipsterClientGenerator.extend({
             this.template(ANGULAR_DIR + 'admin/user-management/_user-management-delete-dialog.controller.js', ANGULAR_DIR + 'admin/user-management/user-management-delete-dialog.controller.js', this, {});
         },
 
-        // cookiepolicy
-        this.copyHtml(ANGULAR_DIR + 'cookiepolicy/cookiepolicy.html', ANGULAR_DIR + 'cookiepolicy/cookiepolicy.html');
-        this.copyJs(ANGULAR_DIR + 'cookiepolicy/_cookiepolicy.js', ANGULAR_DIR + 'cookiepolicy/cookiepolicy.js', this, {});
-
-        writeAngularGatewayFiles: function () {
-            if (this.applicationType !== 'gateway') return;
+        writeAngularGatewayFiles : function () {
+            if (this.applicationType != 'gateway') return;
 
             this.copyHtml(ANGULAR_DIR + 'admin/gateway/gateway.html', ANGULAR_DIR + 'admin/gateway/gateway.html');
             this.copyJs(ANGULAR_DIR + 'admin/gateway/_gateway.state.js', ANGULAR_DIR + 'admin/gateway/gateway.state.js', this, {});
@@ -506,7 +502,12 @@ module.exports = JhipsterClientGenerator.extend({
             this.template(ANGULAR_DIR + 'layouts/navbar/_navbar.controller.js', ANGULAR_DIR + 'layouts/navbar/navbar.controller.js', this, {});
             this.copyHtml(ANGULAR_DIR + 'layouts/error/error.html', ANGULAR_DIR + 'layouts/error/error.html');
             this.copyHtml(ANGULAR_DIR + 'layouts/error/accessdenied.html', ANGULAR_DIR + 'layouts/error/accessdenied.html');
+
             this.copyJs(ANGULAR_DIR + 'layouts/error/_error.state.js', ANGULAR_DIR + 'layouts/error/error.state.js', this, {});
+
+            // cookiepolicy
+            this.copyHtml(ANGULAR_DIR + 'cookiepolicy/cookiepolicy.html', ANGULAR_DIR + 'cookiepolicy/cookiepolicy.html');
+            this.copyJs(ANGULAR_DIR + 'cookiepolicy/_cookiepolicy.js', ANGULAR_DIR + 'cookiepolicy/cookiepolicy.js', this, {});
         },
 
         writeAngularAuthServiceFiles: function () {
@@ -635,6 +636,8 @@ module.exports = JhipsterClientGenerator.extend({
                 'app/layouts/error/error.state.js',
                 'app/layouts/navbar/active-link.directive.js',
                 'app/layouts/navbar/navbar.controller.js',
+                // cookiepolicy
+                'app/cookiepolicy/cookiepolicy.js',
                 // services
                 'app/services/auth/auth.service.js',
                 'app/services/auth/principal.service.js',
