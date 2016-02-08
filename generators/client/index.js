@@ -434,6 +434,10 @@ module.exports = JhipsterClientGenerator.extend({
             this.template(ANGULAR_DIR + 'admin/user-management/_user-management-delete-dialog.controller.js', ANGULAR_DIR + 'admin/user-management/user-management-delete-dialog.controller.js', this, {});
         },
 
+        // cookiepolicy
+        this.copyHtml(ANGULAR_DIR + 'cookiepolicy/cookiepolicy.html', ANGULAR_DIR + 'cookiepolicy/cookiepolicy.html');
+        this.copyJs(ANGULAR_DIR + 'cookiepolicy/_cookiepolicy.js', ANGULAR_DIR + 'cookiepolicy/cookiepolicy.js', this, {});
+
         writeAngularGatewayFiles : function () {
             if (this.applicationType != 'gateway') return;
 
@@ -636,8 +640,6 @@ module.exports = JhipsterClientGenerator.extend({
                 'app/layouts/error/error.state.js',
                 'app/layouts/navbar/active-link.directive.js',
                 'app/layouts/navbar/navbar.controller.js',
-                // cookiepolicy
-                'app/cookiepolicy/cookiepolicy.js',
                 // services
                 'app/services/auth/auth.service.js',
                 'app/services/auth/principal.service.js',
